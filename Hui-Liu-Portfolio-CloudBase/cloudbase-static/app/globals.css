@@ -440,3 +440,11 @@ html.dark{color-scheme:dark;--background:#0f141c;--foreground:#edf2fa;--card:#18
 .dark .student-work-card h3{color:var(--foreground)}
 @media(max-width:760px){.student-work-card{grid-template-columns:minmax(0,1fr) auto;padding:14px 4px 16px 14px}.student-work-card h3{font-size:19px}.student-work-card .student-work-node{top:24px}}
 @media(prefers-reduced-motion:reduce){.student-work-card:is(:hover,:focus-visible) .student-work-arrow{animation:none}}
+/* 去掉志愿服务封面图片两侧的白边 */
+.volunteer-gallery .award-image {
+  background: transparent;
+}
+
+.volunteer-gallery .award-image img {
+  object-fit: cover;
+}
