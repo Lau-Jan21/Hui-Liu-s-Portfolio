@@ -11,7 +11,7 @@ export default function Journal({ posts, profile, owner, unavailable = false }: 
   return <div className="site-shell developer-home"><SiteHeader active="home" /><main>
     <section className="home-band home-hero" aria-labelledby="hero-name"><div className="home-band-inner minimal-hero">
       <div className="minimal-hero-copy">
-        <h1 id="hero-name">{profile.name} <span>Hui Liu</span></h1>
+        <h1 id="hero-name">Hui Liu</h1>
         <h2>{profile.heroTitle}</h2>
         <div className="hero-introduction">
         <div className="minimal-hero-description">{profile.heroDescription.split(/\n+/).filter(Boolean).map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>
